@@ -1,4 +1,3 @@
-require('dotenv').config();
 const nodemailer = require('nodemailer');
 const router = require('express').Router();
 
@@ -29,7 +28,7 @@ router.post('/', (req, res) => {
 	};
 
 	transporter.sendMail(mailOptions, (err, info) => {
-		if(err) return console.log(err);
+		if (err) return console.log(err);
 		else return console.log('Email sent: ' + info.response);
 	});
 
