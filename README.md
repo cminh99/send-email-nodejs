@@ -1,4 +1,4 @@
-# Send email with `nodemailer`
+# send-email-nodejs
 
 This is a simple Nodejs application that sends and receives emails.
 
